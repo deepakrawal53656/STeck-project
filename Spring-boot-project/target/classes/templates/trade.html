@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<style type="text/css">
+body {
+	margin: 0;
+}
+
+.main_container {
+	width: 768px;
+	margin: 6vw auto;
+}
+
+form input {
+	background: #e1e1e1;
+	border: 1px solid #cccccc;
+	font-size: 15px;
+	padding: 15px;
+	border-radius: 2px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+	background: #373737;
+	outline: none;
+	font-size: 20px;
+	color: #fff;
+	padding: 15px 30px;
+	max-width: 200px;
+	margin: 0 auto;
+	border-radius: 0;
+}
+</style>
+</head>
+<body>
+	<div class="main_container">
+		<h1> Book trade </h1>
+		<form action="http://localhost:3200/api/v1/trade", method = "post">
+			<input type="text" name="customerName" placeholder="Customer Name"> 
+				<input type="text" name="amount" placeholder="Amount"> 
+				<input type="text" name="currencyPair" placeholder="Currency Pair">
+				<input type="text" name="rate" placeholder="Rate"> 
+				<input type="submit" name="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
